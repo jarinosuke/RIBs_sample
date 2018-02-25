@@ -20,6 +20,7 @@
 		2BB6B7BD204251010008F23A /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6B7B9204251010008F23A /* LoggedOutBuilder.swift */; };
 		2BB6B7BE204251010008F23A /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6B7BA204251010008F23A /* LoggedOutInteractor.swift */; };
 		2BB6B7C0204252DC0008F23A /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6B7BF204252DC0008F23A /* RootComponent+LoggedOut.swift */; };
+		2BB6B7C22042550B0008F23A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BB6B7C12042550B0008F23A /* RootViewController.xib */; };
 		7F6795A73E508ECEC9B924F7 /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB5F2C2D91843551DDF2BD /* Pods_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		2BB6B7B9204251010008F23A /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
 		2BB6B7BA204251010008F23A /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
 		2BB6B7BF204252DC0008F23A /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
+		2BB6B7C12042550B0008F23A /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		6EB7BFA60895E26425595431 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD95F8AF47C0D48B04BA295 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 			children = (
 				2BB6B7AA204249FE0008F23A /* RootRouter.swift */,
 				2BB6B7AB204249FE0008F23A /* RootViewController.swift */,
+				2BB6B7C12042550B0008F23A /* RootViewController.xib */,
 				2BB6B7AC204249FE0008F23A /* RootBuilder.swift */,
 				2BB6B7AD204249FE0008F23A /* RootInteractor.swift */,
 				2BB6B7BF204252DC0008F23A /* RootComponent+LoggedOut.swift */,
@@ -200,6 +203,7 @@
 			files = (
 				2BB6B7A320423D8D0008F23A /* LaunchScreen.storyboard in Resources */,
 				2BB6B7A020423D8D0008F23A /* Assets.xcassets in Resources */,
+				2BB6B7C22042550B0008F23A /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
