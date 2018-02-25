@@ -6,5 +6,5 @@ workspace 'Sample'
 project 'Sample.xcodeproj'
 
 target 'Sample' do
-  pod 'RIBs', '~> 0.9'
+  pod 'RIBs', '0.9.1'
 end
