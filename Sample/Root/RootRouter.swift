@@ -20,8 +20,16 @@ protocol RootViewControllable: ViewControllable {
 final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, RootRouting {
 
     // TODO: Constructor inject child builder protocols to allow building children.
-    override init(interactor: RootInteractable, viewController: RootViewControllable) {
+    init(interactor: RootInteractable, viewController: RootViewControllable,
+                  loggedOutBuilder: LoggedOutBuildable) {
+        self.loggedOutBuilder = loggedOutBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
+    
+    // MARK: - Private
+    
+    private let loggedOutBuilder: LoggedOutBuildable
+    
+    private var loggedOut: ViewableRouting?
 }
