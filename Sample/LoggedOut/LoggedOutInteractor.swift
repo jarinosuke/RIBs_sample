@@ -43,4 +43,10 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
         super.willResignActive()
         // TODO: Pause any business logic.
     }
+    
+    // MARK: - LoggedOutPresentableListener
+    
+    func login(with username: String?, password: String?) {
+        print("username: \(username)\npassword: \(password)")
+    }
 }

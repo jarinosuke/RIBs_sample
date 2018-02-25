@@ -11,15 +11,19 @@ import RxSwift
 import UIKit
 
 protocol LoggedOutPresentableListener: class {
-    // TODO: Declare properties and methods that the view controller can invoke to perform
-    // business logic, such as signIn(). This protocol is implemented by the corresponding
-    // interactor class.
+    func login(with username: String?, password: String?)
 }
 
 final class LoggedOutViewController: UIViewController, LoggedOutPresentable, LoggedOutViewControllable {
 
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
     /// The UIKit view representation of this view.
     public final var uiviewController: UIViewController { return self }
 
     weak var listener: LoggedOutPresentableListener?
+    @IBAction func pushLoginButton(_ sender: Any) {
+        listener?.login(with: usernameField.text, password: passwordField.text)
+    }
 }

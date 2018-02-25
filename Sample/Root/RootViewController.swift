@@ -22,4 +22,10 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
     public final var uiviewController: UIViewController { return self }
 
     weak var listener: RootPresentableListener?
+    
+    // MARK: - RootViewControllable
+    
+    func present(viewController: ViewControllable) {
+        present(viewController.uiviewController, animated: true, completion: nil)
+    }
 }
